@@ -18,7 +18,6 @@
     _player = [[AVAudioPlayer alloc] initWithContentsOfURL:_soundFileURL
                                                      error:&error];
     _player.delegate = self;
-   // _player.numberOfLoops = 0;
     [_player play];
  
 }
@@ -27,6 +26,5 @@
 {
     // release player to preserve memory
     _player =nil;
-    //    NSLog(@"Song finished playing!");
 }
 @end

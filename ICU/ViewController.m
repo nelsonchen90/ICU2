@@ -75,9 +75,13 @@
     nextButton.backgroundColor = [UIColor yellowColor];
     NSArray *visibleItems = [self.collectionView indexPathsForVisibleItems];
     NSIndexPath *currentItem = [visibleItems objectAtIndex:0];
-    NSIndexPath *nextItem = [NSIndexPath indexPathForItem:currentItem.item + 1 inSection:currentItem.section];
+    NSIndexPath *nextItem =[NSIndexPath indexPathForItem:currentItem.item + 1 inSection:currentItem.section];
+    if (nextItem.item>=_categoryArray.count) {
+        nextItem = [NSIndexPath indexPathForItem: _categoryArray.count-1 inSection:currentItem.section];
+    }
     [self.collectionView scrollToItemAtIndexPath:nextItem atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
-    //NSLog(@"visible item counts: %lu",(unsigned long)visibleItems.count);
+//    NSLog(@"visible item counts: %lu",(unsigned long)visibleItems.count);
+//    NSLog(@"next tiem: %@",nextItem);
 }
 -(void) scrollNextRelease
 {
@@ -106,8 +110,9 @@
 
 -(NSMutableArray*)loadJSONFile
 {
-    NSString *path = [[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"ICU.json"];
-    NSData *data = [[NSData alloc]initWithContentsOfFile:path];
+    //NSString *path = [[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"ICU.json"];
+    NSString *json = [[NSBundle mainBundle] pathForResource:@"ICU" ofType:@"json"];
+    NSData *data = [[NSData alloc]initWithContentsOfFile:json];
     NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:data
                                                             options:NSJSONReadingMutableContainers
                                                               error:nil];
@@ -141,7 +146,7 @@
 {
     cell.categoryName.text = [Language get:thisCategory.categoryName alter:nil];
     // need to edit according to the path within the json file
-    // sound file
+    // sound file should be loaded if voice is on
     BOOL voiceOn = [Voice getVoiceBool];
     if(voiceOn)
     {

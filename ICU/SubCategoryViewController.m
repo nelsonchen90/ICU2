@@ -68,14 +68,23 @@
     nextButton.backgroundColor = [UIColor yellowColor];
     NSArray *visibleItems = [self.SubcategoryCollectionView indexPathsForVisibleItems];
     NSIndexPath *currentItem = [visibleItems objectAtIndex:0];
-    NSIndexPath *nextItem;
-    if(currentItem.item<visibleItems.count){
-         nextItem= [NSIndexPath indexPathForItem:currentItem.item + 1 inSection:currentItem.section];
-    }else{
-        nextItem = [NSIndexPath indexPathForItem:currentItem.item  inSection:currentItem.section];
+    NSIndexPath *nextItem =[NSIndexPath indexPathForItem:currentItem.item + 1 inSection:currentItem.section];
+    if (nextItem.item>=_mainCategory.subcategoriesList.count) {
+        nextItem = [NSIndexPath indexPathForItem: _mainCategory.subcategoriesList.count-1 inSection:currentItem.section];
     }
+//    if(currentItem.item<=visibleItems.count){
+//        nextItem= [NSIndexPath indexPathForItem:currentItem.item + 1 inSection:currentItem.section];
+//        NSLog(@"current.item <= visible items");
+//    }else{
+//        nextItem = [NSIndexPath indexPathForItem:currentItem.item  inSection:currentItem.section];
+//        NSLog(@"current.item > visible items");
+//    }
+//    
+//    NSLog(@"visible item counts: %lu",(unsigned long)visibleItems.count);
+//    NSLog(@"current item : %lu",(unsigned long)currentItem.item);
+//    NSLog(@"next item : %lu",(unsigned long)nextItem.item);
     [self.SubcategoryCollectionView scrollToItemAtIndexPath:nextItem atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
-    //NSLog(@"visible item counts: %lu",(unsigned long)visibleItems.count);
+    
 }
 -(void) scrollNextRelease
 {

@@ -23,7 +23,6 @@
 		747670561AD8461C006BBBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747670541AD8461C006BBBED /* Main.storyboard */; };
 		7479DA1E1AEFE97700A04690 /* Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7479DA1D1AEFE97700A04690 /* Voice.m */; };
 		74A6A55E1AE189B4000DF712 /* pain.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A55C1AE189B4000DF712 /* pain.png */; };
-		74A6A55F1AE189B4000DF712 /* itch.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A55D1AE189B4000DF712 /* itch.png */; };
 		74A6A5641AE18B51000DF712 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A5621AE18B51000DF712 /* Localizable.strings */; };
 		74A6A5731AE1953F000DF712 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A6A5721AE1953F000DF712 /* Language.m */; };
 		74C1AE161AEAE36B00FDADBE /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C1AE151AEAE36B00FDADBE /* ClockViewController.m */; };
@@ -74,7 +73,6 @@
 		7479DA1C1AEFE97700A04690 /* Voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice.h; sourceTree = "<group>"; };
 		7479DA1D1AEFE97700A04690 /* Voice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice.m; sourceTree = "<group>"; };
 		74A6A55C1AE189B4000DF712 /* pain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pain.png; sourceTree = "<group>"; };
-		74A6A55D1AE189B4000DF712 /* itch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itch.png; sourceTree = "<group>"; };
 		74A6A5601AE18A57000DF712 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = ICU/es.lproj/Main.strings; sourceTree = "<group>"; };
 		74A6A5611AE18A57000DF712 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		74A6A5631AE18B51000DF712 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 				74A6A5621AE18B51000DF712 /* Localizable.strings */,
 				747670541AD8461C006BBBED /* Main.storyboard */,
 				74E3BB241AD0503B00436187 /* LaunchScreen.xib */,
-				743B6A651AD5C1DC00F4B1EB /* ICU.json */,
 				74E3BB151AD0503B00436187 /* Supporting Files */,
 			);
 			path = ICU;
@@ -216,16 +213,16 @@
 		74E3BB151AD0503B00436187 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				743B6A651AD5C1DC00F4B1EB /* ICU.json */,
 				607DF3B61AE74B6A00986948 /* sign language */,
-				607DF3B21AE7102E00986948 /* GALLAUDET.ttf */,
 				603AD5921AE2D47300955E6A /* media */,
 				74227DCC1AE02D7B00A35F4B /* backArrow.png */,
 				74227DCD1AE02D7B00A35F4B /* nextArrow.png */,
 				74216F801ADDAC8900A7D567 /* human-muscle-anatomy.jpg */,
+				74A6A55C1AE189B4000DF712 /* pain.png */,
 				74E3BB161AD0503B00436187 /* Info.plist */,
 				74E3BB171AD0503B00436187 /* main.m */,
-				74A6A55C1AE189B4000DF712 /* pain.png */,
-				74A6A55D1AE189B4000DF712 /* itch.png */,
+				607DF3B21AE7102E00986948 /* GALLAUDET.ttf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -333,7 +330,6 @@
 				603AD5931AE2D47300955E6A /* media in Resources */,
 				743B6A661AD5C1DC00F4B1EB /* ICU.json in Resources */,
 				74E3BB261AD0503B00436187 /* LaunchScreen.xib in Resources */,
-				74A6A55F1AE189B4000DF712 /* itch.png in Resources */,
 				74216F811ADDAC8900A7D567 /* human-muscle-anatomy.jpg in Resources */,
 				74A6A55E1AE189B4000DF712 /* pain.png in Resources */,
 				74A6A5641AE18B51000DF712 /* Localizable.strings in Resources */,

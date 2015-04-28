@@ -15,14 +15,7 @@ static bool voiceOn;
 {
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     BOOL defaultVoice = [userDefaults boolForKey:@"Voice"];
-    if(defaultVoice)
-    {
-        [self setVoiceBool:defaultVoice];
-    }
-    else
-    {
-        [self setVoiceBool:YES];
-    }
+    [self setVoiceBool:defaultVoice];
 }
 
 +(void) setVoiceBool:(BOOL)value
