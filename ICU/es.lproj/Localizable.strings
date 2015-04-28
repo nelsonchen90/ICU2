@@ -1,0 +1,134 @@
+/* 
+  Localizable.strings
+  ICU
+
+  Created by 陈曦翔 on 4/17/15.
+  Copyright (c) 2015 Xixiang Chen. All rights reserved.
+*/
+
+//label button etc
+"Settings"="ajustes";
+"Language"="idiomas";
+"Voice"="voz";
+"scale"="escala";
+"area"="zona";
+"On/Off"="activado/apagado";
+//end
+
+
+//category name starts
+"itch"="dolor";
+"pain"="picazón";
+"physical comfort"="comodidad física";
+"physical"="físico";
+"emotional"="emocional";
+"environmental"="ambiental";
+"personal belongings"="objetos personales";
+"typing"="mecanografía";
+//category name ends
+
+//subcategory name starts
+"Pill/\Capsule"="Píldora\/Cápsula";
+"Pillow"="almohada";
+"Blanket"="manta";
+"Music"="música";
+"Book"="libro";
+"Phone"="teléfono";
+"Glasses"="gafas";
+"Hearing Aid"="aparatos para la sordera";
+"Dentures"="dentadura postiza";
+"Bed"="cama";
+"Chair"="silla";
+"Person standing"="persona de pie";
+"Sleep"="sueño";
+"Tissue Box"="Caja De Pañuelos";
+"Toilet"="inodoro";
+"Shower"="ducha";
+"Clock"="reloj";
+"Calendar"="calendario";
+"Tooth Brush"="cepillo de dientes";
+"Comb"="peine";
+"Nurse"="enfermera";
+"Doctor"="médico";
+"Gathering"="reunión";
+"Church"="iglesia";
+"Sad"="triste";
+"Happy"="feliz";
+"Frustrated"="frustrado";
+"Call Bell"="Llame a Campana";
+"Fork and Knife"="Tenedor y cuchillo";
+"Glass of Water"="Vaso de agua";
+"Ice cubes"="cubos de hielo";
+"Fan"="ventilador";
+"Urinal"="urinario";
+"Bedpan"="calentador de cama";
+"TV"="televisión";
+"Wallet"="billetera";
+"Purse"="monedero";
+"Watch"="reloj";
+"Socks\/Shoes"="Calcetines\/Zapatos";
+"Clothing"="ropa";
+//subcategory name ends
+
+//subcategory description starts
+"I need pain medication"="Necesito medicamentos para el dolor";
+"I need a pillow"="Necesito una almohada";
+"I need a blanket"="Necesito una manta";
+"I want to listen music"="Quiero escuchar música";
+"I want to read books"="Quiero leer libros";
+"I want to talk/call"="Quiero hacer una llamada";
+"I want on glasses"="Quiero las gafas";
+"I want to pu on my hearing aid"="Quiero poner en mi audífono";
+"I want to wear dentures"="Quiero usar las dentaduras";
+"I want to go to bed"="Yo quiero ir a la cama";
+"I want to sit in chair"="Quiero sentarme en la silla";
+"I want to stand/walk"="Quiero pararme y caminar";
+"I want to sleep"="Quiero dormir";
+"I need tissues"="Necesito tejidos";
+"I need to go to bathroom"="Necesito ir al baño";
+"I want to take a shower"="Quiero tomar una ducha";
+"What time is it?"="qué hora es?";
+"What date is it?"="qué mes y día es hoy?";
+"Brush my teeth"="cepillarme los dientes";
+"Brush and comb hair"="	epillo y peine del pelo";
+"I want my nurse"="Quiero que mi enfermera";
+"I want my doctor"="Quiero que mi médico";
+"I want to see family/friends"="Quiero ver a la familia o amigos";
+"I want to see my Chaplin/religious leader"="Quiero ver a mi Chaplin / líder religioso";
+"I am sad"="Estoy triste";
+"I am happy"="Soy feliz";
+"I am frustrated"="Estoy frustrado";
+"I need my call bell"="Necesito mi timbre de llamada";
+"I am hungry"="Estoy hambriento";
+"I am thirsty"="Tengo sed";
+"I am cold"="Siento frio";
+"I am hot"="Estoy caliente";
+"I need to urinate"="Necesito orinar";
+"I need to have a bowel movement"="Necesito tener una evacuación intestinal";
+"I want to watch TV"="Quiero ver la televisión";
+"I want my wallet"="Quiero que mi billetera";
+"I want my purse"="Quiero mi bolso";
+"I want my watch"="Quiero que mi reloj";
+"I want my shoes and socks"="Quiero que mis zapatos y calcetines";
+"I want to wear clothes"="Quiero usar ropa";
+//subcategory description end
+
+//sound directory
+"media/sound/physicalComfort"="media/sound/es/physicalComfort";
+"media/sound/pain"="media/sound/es/pain";
+"media/sound/itch"="media/sound/es/itch";
+"media/sound/physical"="media/sound/es/physical";
+"media/sound/personalBelongings"="media/sound/es/personalBelongings";
+"media/sound/emotional"="media/sound/es/emotional";
+"media/sound/environmental"="media/sound/es/environmental";
+"media/sound/typing"="media/sound/es/typing";
+
+"media/sound/physicalComfort/"="media/sound/es/physicalComfort/";
+"media/sound/pain/"="media/sound/es/pain/";
+"media/sound/itch/"="media/sound/es/itch/";
+"media/sound/physical/"="media/sound/es/physical/";
+"media/sound/personalBelongings/"="media/sound/es/personalBelongings/";
+"media/sound/emotional/"="media/sound/es/emotional/";
+"media/sound/environmental/"="media/sound/es/environmental/";
+"media/sound/typing/"="media/sound/es/typing/";
+//end of sound directory

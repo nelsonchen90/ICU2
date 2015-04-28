@@ -1,0 +1,292 @@
+{
+    "_instructions":[
+                     {
+                     "1":"All icons should be (.png).",
+                     "2":"All sound files should be (.acc) (not decided).",
+                     "3":"For category that doesn't have subcategory (e.g Pain, Itch) remove subcategoreis from the example below).",
+                     "4":"Icons & sound files for subcategory should be named after the 'fileName' attribute in this file accordingly."
+                     },
+                     {
+                     "example":[
+                                {
+                                "categoryName":"*categoryName text*",
+                                "iconFile":"media/icon/categoryName.png",
+                                "soundFile":"media/sound/categoryName",
+                                "subcategoriesIconDirectory":"media/icon/categoryName/",
+                                "subcategoriesSoundDirectory":"media/sound/categoryName/",
+                                "subcategories":[
+                                                 {
+                                                 "subcategoryName":"*name text*",
+                                                 "fileName":"*filename text*",
+                                                 "description":"*description text*"
+                                                 }
+                                                 ]
+                                }
+                                ]
+                     }
+                     ],
+    "categories":[
+                  {
+                  "categoryName":"physical comfort",
+                  "iconFile":"media/icon/physicalComfort.png",
+                  "soundFile":"media/sound/physicalComfort",
+                  "subcategoriesIconDirectory":"media/icon/physicalComfort/",
+                  "subcategoriesSoundDirectory":"media/sound/physicalComfort/",
+                  "subcategories":[
+                                   {
+                                   "subcategoryName":"Pill\/Capsule",
+                                   "fileName":"pill",
+                                   "description":"I need pain medication"
+                                   },
+                                   {
+                                   "subcategoryName":"Pillow",
+                                   "fileName":"pillow",
+                                   "description":"I need a pillow"
+                                   },
+                                   {
+                                   "subcategoryName":"Blanket",
+                                   "fileName":"blanket",
+                                   "description":"I need a blanket"
+                                   },
+                                   {
+                                   "subcategoryName":"Music",
+                                   "fileName":"music",
+                                   "description":"I want to listen music"
+                                   },
+                                   {
+                                   "subcategoryName":"Book",
+                                   "fileName":"book",
+                                   "description":"I want to read books"
+                                   },
+                                   {
+                                   "subcategoryName":"Phone",
+                                   "fileName":"phone",
+                                   "description":"I want to call\/talk"
+                                   },
+                                   {
+                                   "subcategoryName":"Glasses",
+                                   "fileName":"glasses",
+                                   "description":"I want to put on my glasses"
+                                   },
+                                   {
+                                   "subcategoryName":"Hearing Aid",
+                                   "fileName":"hearing",
+                                   "description":"I want to put on my hearing aid"
+                                   },
+                                   {
+                                   "subcategoryName":"Dentures",
+                                   "fileName":"dentures",
+                                   "description":"I want to wear dentures"
+                                   }
+                                   ]
+                  },
+                  {
+                  "categoryName":"pain",
+                  "iconFile":"media/icon/pain.png",
+                  "soundFile":"media/sound/pain"
+                  },
+                  {
+                  "categoryName":"itch",
+                  "iconFile":"media/icon/itch.png",
+                  "soundFile":"media/sound/itch"
+                  },
+                  {
+                  "categoryName":"physical",
+                  "iconFile":"media/icon/physical.png",
+                  "soundFile":"media/sound/physical",
+                  "subcategoriesIconDirectory":"media/icon/physical/",
+                  "subcategoriesSoundDirectory":"media/sound/physical/",
+                  "subcategories":[
+                                   {
+                                   "subcategoryName":"Bed",
+                                   "fileName":"bed",
+                                   "description":"I want to go to bed"
+                                   },
+                                   {
+                                   "subcategoryName":"Chair",
+                                   "fileName":"chair",
+                                   "description":"I want to sit in chair"
+                                   },
+                                   {
+                                   "subcategoryName":"Person standing",
+                                   "fileName":"stand",
+                                   "description":"I want to stand\/walk"
+                                   },
+                                   {
+                                   "subcategoryName":"Sleep",
+                                   "fileName":"sleep",
+                                   "description":"I want to sleep"
+                                   },
+                                   {
+                                   "subcategoryName":"Tissue Box",
+                                   "fileName":"tissue",
+                                   "description":"I need tissues"
+                                   },
+                                   {
+                                   "subcategoryName":"Toilet",
+                                   "fileName":"toilet",
+                                   "description":"I need to go to bathroom"
+                                   },
+                                   {
+                                   "subcategoryName":"Shower",
+                                   "fileName":"shower",
+                                   "description":"I want to take a shower"
+                                   },
+                                   {
+                                   "subcategoryName":"Clock",
+                                   "fileName":"clock",
+                                   "description":"What time is it?"
+                                   },
+                                   {
+                                   "subcategoryName":"Calendar",
+                                   "fileName":"calendar",
+                                   "description":"What date is it?"
+                                   },
+                                   {
+                                   "subcategoryName":"Tooth Brush",
+                                   "fileName":"teeth",
+                                   "description":"Brush my teeth"
+                                   },
+                                   {
+                                   "subcategoryName":"Comb",
+                                   "fileName":"comb",
+                                   "description":"Brush and comb my hair"
+                                   }
+                                   ]
+                  },
+                  {
+                  "categoryName":"emotional",
+                  "iconFile":"media/icon/emotional.png",
+                  "soundFile":"media/sound/emotional",
+                  "subcategoriesIconDirectory":"media/icon/emotional/",
+                  "subcategoriesSoundDirectory":"media/sound/emotional/",
+                  "subcategories":[
+                                   {
+                                   "subcategoryName":"Nurse",
+                                   "fileName":"nurse",
+                                   "description":"I want my nurse"
+                                   },
+                                   {
+                                   "subcategoryName":"Doctor",
+                                   "fileName":"doctor",
+                                   "description":"I want my doctor"
+                                   },
+                                   {
+                                   "subcategoryName":"Gathering",
+                                   "fileName":"gathering",
+                                   "description":"I want to see my family\/friends"
+                                   },
+                                   {
+                                   "subcategoryName":"Church",
+                                   "fileName":"church",
+                                   "description":"I want to see my Chaplin\/religious leader"
+                                   },
+                                   {
+                                   "subcategoryName":"Sad",
+                                   "fileName":"sad",
+                                   "description":"I am sad"
+                                   },
+                                   {
+                                   "subcategoryName":"Happy",
+                                   "fileName":"happy",
+                                   "description":"I am happy"
+                                   },
+                                   {
+                                   "subcategoryName":"Frustrated",
+                                   "fileName":"frustrated",
+                                   "description":"I am frustrated"
+                                   }
+                                   ]
+                  },
+                  {
+                  "categoryName":"environmental",
+                  "iconFile":"media/icon/environmental.png",
+                  "soundFile":"media/sound/environmental",
+                  "subcategoriesIconDirectory":"media/icon/environmental/",
+                  "subcategoriesSoundDirectory":"media/sound/environmental/",
+                  "subcategories":[
+                                   {
+                                   "subcategoryName":"Call Bell",
+                                   "fileName":"call",
+                                   "description":"I need my call bell"
+                                   },
+                                   {
+                                   "subcategoryName":"Fork and Knife",
+                                   "fileName":"hungry",
+                                   "description":"I am hungry"
+                                   },
+                                   {
+                                   "subcategoryName":"Glass of Water",
+                                   "fileName":"thirsty",
+                                   "description":"I am thirsty"
+                                   },
+                                   {
+                                   "subcategoryName":"Ice cubes",
+                                   "fileName":"cold",
+                                   "description":"I am cold"
+                                   },
+                                   {
+                                   "subcategoryName":"Fan",
+                                   "fileName":"hot",
+                                   "description":"I am hot"
+                                   },
+                                   {
+                                   "subcategoryName":"Urinal",
+                                   "fileName":"unriate",
+                                   "description":"I need to urinate"
+                                   },
+                                   {
+                                   "subcategoryName":"Bedpan",
+                                   "fileName":"bedpan",
+                                   "description":"I need to have a bowel movement"
+                                   },
+                                   {
+                                   "subcategoryName":"TV",
+                                   "fileName":"tv",
+                                   "description":"I want to watch TV"
+                                   }
+                                   ]
+                  },
+                  {
+                  "categoryName":"personal belongings",
+                  "iconFile":"media/icon/personalBelongings.png",
+                  "soundFile":"media/sound/personalBelongings",
+                  "subcategoriesIconDirectory":"media/icon/personalBelongings/",
+                  "subcategoriesSoundDirectory":"media/sound/personalBelongings/",
+                  "subcategories":[
+                                   {
+                                   "subcategoryName":"Wallet",
+                                   "fileName":"wallet",
+                                   "description":"I want my wallet"
+                                   },
+                                   {
+                                   "subcategoryName":"Purse",
+                                   "fileName":"purse",
+                                   "description":"I want my purse"
+                                   },
+                                   {
+                                   "subcategoryName":"Watch",
+                                   "fileName":"watch",
+                                   "description":"I want my watch"
+                                   },
+                                   {
+                                   "subcategoryName":"Socks\/Shoes",
+                                   "fileName":"socks",
+                                   "description":"I want my shoes and socks"
+                                   },
+                                   {
+                                   "subcategoryName":"Clothing",
+                                   "fileName":"clothes",
+                                   "description":"I want to wear clothes"
+                                   }
+                                   ]
+                  },
+                  {
+                  "categoryName":"typing",
+                  "iconFile":"media/icon/typing.png",
+                  "soundFile":"media/sound/typing",
+                  "subcategoriesIconDirectory":"media/icon/typing/",
+                  "subcategoriesSoundDirectory":"media/sound/typing/"
+                  }
+                  ]
+}

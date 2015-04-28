@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  ICU
+
+  Created by 陈曦翔 on 4/17/15.
+  Copyright (c) 2015 Xixiang Chen. All rights reserved.
+*/
+
+"pain"="Pain";
+"itch"="Itch";
+"physical comfort"="Physical Comfort";
+"Physical"="Physical";
+"environmental"="Environmental";
+"personal belongings"="Personal Belongings";
+"typing"="Typing";
+
+"media/sound/physicalComfort"="media/sound/en/physicalComfort";
+"media/sound/pain"="media/sound/en/pain";
+"media/sound/itch"="media/sound/en/itch";
+"media/sound/physical"="media/sound/en/physical";
+
+"media/sound/personalBelongings"="media/sound/en/personalBelongings";
+"media/sound/emotional"="media/sound/en/emotional";
+"media/sound/environmental"="media/sound/en/environmental";
+"media/sound/typing"="media/sound/en/typing";
+
+
+"media/sound/physicalComfort/"="media/sound/en/physicalComfort/";
+"media/sound/pain/"="media/sound/en/pain/";
+"media/sound/itch/"="media/sound/en/itch/";
+"media/sound/physical/"="media/sound/en/physical/";
+"media/sound/personalBelongings/"="media/sound/en/personalBelongings/";
+"media/sound/emotional/"="media/sound/en/emotional/";
+"media/sound/environmental/"="media/sound/en/environmental/";
+"media/sound/typing/"="media/sound/en/typing/";
