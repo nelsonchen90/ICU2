@@ -10,7 +10,7 @@
 
 @interface Language : NSObject
 
-+(void)initialize;
++(void)init;
 +(void)setLanguage:(NSString *)l;
 +(NSString *)get:(NSString *)key alter:(NSString *)alternate;
 +(NSString*)getCurrentLanguage;

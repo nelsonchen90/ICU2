@@ -66,7 +66,7 @@
 -(void) changeColor:(float)sliderValue
 {
     
-    UIColor* painColor = [UIColor colorWithRed:(253/255.0) green:(0/255.0) blue:(255*(1-0.1*sliderValue)/255.0) alpha:0.2+0.1*sliderValue];
+    UIColor* painColor = [[UIColor blueColor] colorWithAlphaComponent:0.2+0.1*sliderValue];
     self.bgColor=painColor;
     self.circleView.backgroundColor = self.bgColor;
 }

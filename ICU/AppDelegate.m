@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
 // loading userDefaults on Language and voice on/off settings
-    [Language initialize];
+    [Language init];
     [Voice initVoice];
     return YES;
 }

@@ -12,6 +12,7 @@
 #import "MainCategory.h"
 #import "MainCategoryCVCell.h"
 
+#import "BackgroundColor.h"
 #import "Voice.h"
 #import "Language.h"
 @interface ViewController ()
@@ -31,7 +32,7 @@
     [self createNavigationalButton];
     self.title=@"AMC";
     self.settingButton.title = [Language get:@"Settings" alter:nil];
-    
+    self.collectionView.backgroundColor = [BackgroundColor getColor];
 
 }
 -(void)viewWillAppear:(BOOL)animated
@@ -39,18 +40,20 @@
     [super viewWillAppear:animated];
     self.settingButton.title = [Language get:@"Settings" alter:nil];
     [self.collectionView reloadData];
+    self.collectionView.backgroundColor = [BackgroundColor getColor];
+
 }
 
 -(void) createNavigationalButton
 {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
-    
+    static float buttonWidth = 100;
     //next button
     NSString* file = [[NSBundle mainBundle] pathForResource:@"nextArrow" ofType:@"png"];
     UIImage* image = [UIImage imageWithContentsOfFile:file];
-    nextButton = [[UIButton alloc] initWithFrame:CGRectMake(screenWidth-70, 100, 50, 50)];
-    nextButton.layer.cornerRadius = 25;
+    nextButton = [[UIButton alloc] initWithFrame:CGRectMake(screenWidth-120, 100, buttonWidth, buttonWidth)];
+    nextButton.layer.cornerRadius = buttonWidth/2;
     [nextButton setBackgroundImage:image forState:UIControlStateNormal];
     [nextButton addTarget:self action:@selector(scrollNextTap) forControlEvents:UIControlEventTouchDown];
     [nextButton addTarget:self action:@selector(scrollNextRelease) forControlEvents:UIControlEventTouchUpInside];
@@ -60,8 +63,8 @@
     //back button
     NSString* file1 = [[NSBundle mainBundle] pathForResource:@"backArrow" ofType:@"png"];
     UIImage* image1 = [UIImage imageWithContentsOfFile:file1];
-    backButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, 50, 50)];
-    backButton.layer.cornerRadius = 25;
+    backButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, buttonWidth, buttonWidth)];
+    backButton.layer.cornerRadius = buttonWidth/2;
     [backButton setBackgroundImage:image1 forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(scrollBackTap) forControlEvents:UIControlEventTouchDown];
     [backButton addTarget:self action:@selector(scrollBackRelease) forControlEvents:UIControlEventTouchUpInside];
@@ -162,7 +165,7 @@
         cell.playButton.hidden=YES;
     }
     // icon file
-    NSString* iconFile = [[NSBundle mainBundle] pathForResource:@"media/icon/test" ofType:@"png"];
+    NSString* iconFile = [[NSBundle mainBundle] pathForResource:thisCategory.iconFile ofType:@"png"];
     // change should be completed above
     
     UIImage* image = [UIImage imageWithContentsOfFile:iconFile];

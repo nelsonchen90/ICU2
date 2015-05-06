@@ -13,7 +13,7 @@
 static NSBundle *bundle = nil;
 static NSString *language =@"en";
 
-+(void)initialize {
++(void)init {
     NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
     NSArray* languages = [defs objectForKey:@"AppleLanguages"];
     NSString* defaultLanguage = [defs valueForKey:@"Language"];

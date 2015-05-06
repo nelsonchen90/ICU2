@@ -9,8 +9,11 @@
 #import "ViewController.h"
 
 @interface CalendarViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *dowLabel;
+@property (strong, nonatomic) IBOutlet UILabel *moyLabel;
+@property (strong, nonatomic) IBOutlet UILabel *domLabel;
+@property (strong, nonatomic) IBOutlet UILabel *yearLabel;
 
-@property (strong, nonatomic) IBOutlet UILabel *calendarLabel;
-@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
+
 
 @end

@@ -107,6 +107,7 @@
 }
 
 - (void)createKeyboard{
+    UIColor *color=[UIColor colorWithRed:0xBE/255.0 green:0xBE/255.0 blue:0xBE/255.0 alpha:1];
     UIButton *button_0=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button_0.frame=CGRectMake(8.5, 10, 77, 71);
     [button_0 setBackgroundImage:[UIImage imageNamed:@"sign language/0.PNG"] forState:UIControlStateNormal];
@@ -115,7 +116,6 @@
     UIButton *button_1=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button_1.frame=CGRectMake(101.5, 10, 77, 71);
     [button_1 setBackgroundImage:[UIImage imageNamed:@"sign language/1.PNG"] forState:UIControlStateNormal];
-    
     [numView addSubview:button_1];
 
     UIButton *button_2=[UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -365,6 +365,56 @@
     [button_123r setBackgroundImage:[UIImage imageNamed:@"sign language/123.PNG"] forState:UIControlStateNormal];
     [button_123r addTarget:self action:@selector(changeNumBtns) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:button_123r];
+    
+    button_0.backgroundColor=color;
+    button_1.backgroundColor=color;
+    button_2.backgroundColor=color;
+    button_3.backgroundColor=color;
+    button_4.backgroundColor=color;
+    button_5.backgroundColor=color;
+    button_6.backgroundColor=color;
+    button_7.backgroundColor=color;
+    button_8.backgroundColor=color;
+    button_9.backgroundColor=color;
+    button_a.backgroundColor=color;
+    button_b.backgroundColor=color;
+    button_c.backgroundColor=color;
+    button_d.backgroundColor=color;
+    button_e.backgroundColor=color;
+    button_f.backgroundColor=color;
+    button_g.backgroundColor=color;
+    button_h.backgroundColor=color;
+    button_i.backgroundColor=color;
+    button_j.backgroundColor=color;
+    button_k.backgroundColor=color;
+    button_l.backgroundColor=color;
+    button_m.backgroundColor=color;
+    button_n.backgroundColor=color;
+    button_o.backgroundColor=color;
+    button_p.backgroundColor=color;
+    button_q.backgroundColor=color;
+    button_r.backgroundColor=color;
+    button_s.backgroundColor=color;
+    button_t.backgroundColor=color;
+    button_u.backgroundColor=color;
+    button_v.backgroundColor=color;
+    button_w.backgroundColor=color;
+    button_x.backgroundColor=color;
+    button_y.backgroundColor=color;
+    button_z.backgroundColor=color;
+    button_abc.backgroundColor=color;
+    button_abc2.backgroundColor=color;
+    button_at.backgroundColor=color;
+    button_space.backgroundColor=color;
+    button_space2.backgroundColor=color;
+    del.backgroundColor=color;
+    del2.backgroundColor=color;
+    enter.backgroundColor=color;
+    button_123.backgroundColor=color;
+    button_123r.backgroundColor=color;
+    button_comma.backgroundColor=color;
+    ques.backgroundColor=color;
+    button_point.backgroundColor=color;
     
     [button_0 addTarget:self action:@selector(typing0) forControlEvents:UIControlEventTouchUpInside];
     [button_1 addTarget:self action:@selector(typing1) forControlEvents:UIControlEventTouchUpInside];

@@ -7,7 +7,7 @@
 //
 
 #import "ClockViewController.h"
-
+#import "BackgroundColor.h"
 @interface ClockViewController ()
 
 @end
@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [BackgroundColor getColor];
+
     [self updateTime];
+
     // Do any additional setup after loading the view.
 }
 

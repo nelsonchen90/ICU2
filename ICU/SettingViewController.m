@@ -9,18 +9,25 @@
 #import "SettingViewController.h"
 #import "Language.h"
 #import "Voice.h"
+#import "BackgroundColor.h"
 @interface SettingViewController ()
 
 @end
 
-@implementation SettingViewController
+@implementation SettingViewController{
+    NSMutableArray* colorArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self settingLanguages];
     [self settingVoice];
-    
-    // Do any additional setup after loading the view.
+    [self setBackgroundColor];
+}
+
+-(void) setBackgroundColor
+{
+    self.view.backgroundColor = [BackgroundColor getColor];
 }
 
 -(void)settingVoice
@@ -38,6 +45,7 @@
     self.switchLabel.text=[Language get:@"On/Off" alter:nil];
     self.languageLabel.text=[Language get:@"Language" alter:nil];
     self.voiceLabel.text=[Language get:@"Voice" alter:nil];
+    [self.colorPicker setTitle:[Language get:@"Background Color" alter:nil] forState:UIControlStateNormal];
     if([[Language getCurrentLanguage] isEqualToString:@"en"])
     {
         [self highLihgtSelectedButton:_enButton];
@@ -66,15 +74,23 @@
 {
     [[button layer] setBorderWidth:0.0f];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+-(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
+//    self.color = color;
+    [BackgroundColor setColor:color];
+    [self setBackgroundColor];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/
+
+-(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+#pragma mark - ibaction
+
+
 
 - (IBAction)setEnglish:(id)sender {
     
@@ -88,6 +104,15 @@
     [self settingLanguages];
 
 }
+- (IBAction)pickColorTapped:(id)sender {
+    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPicker];
+    colorPicker.color = self.color;
+    colorPicker.delegate = self;
+    
+    [colorPicker setModalPresentationStyle:UIModalPresentationFormSheet];
+    [self presentViewController:colorPicker animated:YES completion:nil];
+}
+
 - (IBAction)voiceSwitchOn:(id)sender {
     if(_voiceSwitch.on){
         [Voice setVoiceBool:YES];

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7C351B69-2328-4AD6-8627-65C055396939</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ICU</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5BF7210F17C74F3E367C75A64C39B662CA727F9B</key>
+		<string>https://github.com/nelsonchen90/ICU.git</string>
+		<key>D9E8A6563F60AFB2EB33E67E2A9C58215762115E</key>
+		<string>https://github.com/nelsonchen90/ICU2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ICU.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5BF7210F17C74F3E367C75A64C39B662CA727F9B</key>
+		<string>../../..</string>
+		<key>D9E8A6563F60AFB2EB33E67E2A9C58215762115E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nelsonchen90/ICU2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D9E8A6563F60AFB2EB33E67E2A9C58215762115E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5BF7210F17C74F3E367C75A64C39B662CA727F9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9E8A6563F60AFB2EB33E67E2A9C58215762115E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ICU</string>
+		</dict>
+	</array>
+</dict>
+</plist>

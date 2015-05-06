@@ -13,6 +13,10 @@
 "scale"="escala";
 "area"="zona";
 "On/Off"="activado/apagado";
+"reset image"="imagen de reinicio";
+"Choose"="elegir";
+"Cancel"="cancelar";
+"Background Color"="color De Fondo";
 //end
 
 
@@ -33,6 +37,7 @@
 "Blanket"="manta";
 "Music"="música";
 "Book"="libro";
+"I want a fan"="quiero un ventilador";
 "Phone"="teléfono";
 "Glasses"="gafas";
 "Hearing Aid"="aparatos para la sordera";
@@ -58,7 +63,8 @@
 "Call Bell"="Llame a Campana";
 "Fork and Knife"="Tenedor y cuchillo";
 "Glass of Water"="Vaso de agua";
-"Ice cubes"="cubos de hielo";
+"Cold"="frío";
+"Hot"="caliente";
 "Fan"="ventilador";
 "Urinal"="urinario";
 "Bedpan"="calentador de cama";

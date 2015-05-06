@@ -28,7 +28,7 @@
     "categories":[
                   {
                   "categoryName":"physical comfort",
-                  "iconFile":"media/icon/physicalComfort.png",
+                  "iconFile":"media/icon/physicalComfort",
                   "soundFile":"media/sound/physicalComfort",
                   "subcategoriesIconDirectory":"media/icon/physicalComfort/",
                   "subcategoriesSoundDirectory":"media/sound/physicalComfort/",
@@ -59,6 +59,11 @@
                                    "description":"I want to read books"
                                    },
                                    {
+                                   "subcategoryName":"Fan",
+                                   "fileName":"fan",
+                                   "description":"I want a fan"
+                                   },
+                                   {
                                    "subcategoryName":"Phone",
                                    "fileName":"phone",
                                    "description":"I want to call\/talk"
@@ -81,18 +86,18 @@
                                    ]
                   },
                   {
-                  "categoryName":"pain",
-                  "iconFile":"media/icon/pain.png",
+                 "categoryName":"pain",
+                  "iconFile":"media/icon/pain",
                   "soundFile":"media/sound/pain"
                   },
                   {
                   "categoryName":"itch",
-                  "iconFile":"media/icon/itch.png",
+                  "iconFile":"media/icon/itch",
                   "soundFile":"media/sound/itch"
                   },
                   {
                   "categoryName":"physical",
-                  "iconFile":"media/icon/physical.png",
+                  "iconFile":"media/icon/physical",
                   "soundFile":"media/sound/physical",
                   "subcategoriesIconDirectory":"media/icon/physical/",
                   "subcategoriesSoundDirectory":"media/sound/physical/",
@@ -156,7 +161,7 @@
                   },
                   {
                   "categoryName":"emotional",
-                  "iconFile":"media/icon/emotional.png",
+                  "iconFile":"media/icon/emotional",
                   "soundFile":"media/sound/emotional",
                   "subcategoriesIconDirectory":"media/icon/emotional/",
                   "subcategoriesSoundDirectory":"media/sound/emotional/",
@@ -200,7 +205,7 @@
                   },
                   {
                   "categoryName":"environmental",
-                  "iconFile":"media/icon/environmental.png",
+                  "iconFile":"media/icon/environmental",
                   "soundFile":"media/sound/environmental",
                   "subcategoriesIconDirectory":"media/icon/environmental/",
                   "subcategoriesSoundDirectory":"media/sound/environmental/",
@@ -221,12 +226,12 @@
                                    "description":"I am thirsty"
                                    },
                                    {
-                                   "subcategoryName":"Ice cubes",
+                                   "subcategoryName":"Cold",
                                    "fileName":"cold",
                                    "description":"I am cold"
                                    },
                                    {
-                                   "subcategoryName":"Fan",
+                                   "subcategoryName":"Hot",
                                    "fileName":"hot",
                                    "description":"I am hot"
                                    },
@@ -249,7 +254,7 @@
                   },
                   {
                   "categoryName":"personal belongings",
-                  "iconFile":"media/icon/personalBelongings.png",
+                  "iconFile":"media/icon/personalBelongings",
                   "soundFile":"media/sound/personalBelongings",
                   "subcategoriesIconDirectory":"media/icon/personalBelongings/",
                   "subcategoriesSoundDirectory":"media/sound/personalBelongings/",
@@ -283,7 +288,7 @@
                   },
                   {
                   "categoryName":"typing",
-                  "iconFile":"media/icon/typing.png",
+                  "iconFile":"media/icon/typing",
                   "soundFile":"media/sound/typing",
                   "subcategoriesIconDirectory":"media/icon/typing/",
                   "subcategoriesSoundDirectory":"media/sound/typing/"

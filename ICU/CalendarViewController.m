@@ -7,7 +7,8 @@
 //
 
 #import "CalendarViewController.h"
-
+#import "BackgroundColor.h"
+#import "Language.h"
 @interface CalendarViewController ()
 
 @end
@@ -16,12 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [BackgroundColor getColor];
+
     NSDate *date=[NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM-dd-YYYY EEE"];
-    NSString *currentDateStr = [dateFormatter stringFromDate:date];
+    [dateFormatter setDateFormat:@"MMMM"];
+    NSString *moy = [dateFormatter stringFromDate:date];
+    [dateFormatter setDateFormat:@"EEEE"];
+    NSString *dow = [dateFormatter stringFromDate:date];
+    [dateFormatter setDateFormat:@"dd"];
+    NSString *dom = [dateFormatter stringFromDate:date];
+    [dateFormatter setDateFormat:@"yyyy"];
+    NSString *year = [dateFormatter stringFromDate:date];
     
-    _dateLabel.text=currentDateStr;
+    _dowLabel.text=[Language get:dow alter:nil];
+    _domLabel.text= [Language get:dom alter:nil];
+    _yearLabel.text = [Language get:year alter:nil];
+    _moyLabel.text = [Language get:moy alter:nil];
     //_dateLabel.font=[UIFont systemFontOfSize:80];
     // Do any additional setup after loading the view.
 }
